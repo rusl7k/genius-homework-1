@@ -237,7 +237,67 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-              <form action="">forma</form>
+              <div class="select-contact">
+                <div class="contact-input-fields">
+                  <p class="modal-call-to-action">
+                    Запишіться <span class="accent">безкоштовно</span> та
+                    отримайте подарунок
+                  </p>
+
+                  <form name="contact-form" autocomplete="on" novalidate>
+                    <div class="contact-field">
+                      <label class="form-label visually-hidden" for="user-name"
+                        >Введіть ваше імя</label
+                      >
+                      <input
+                        class="form-input"
+                        type="text"
+                        id="user-name"
+                        name="user-name"
+                        placeholder="Ваше ім'я та прізвище"
+                      />
+                    </div>
+
+                    <div class="contact-field">
+                      <label class="form-label visually-hidden" for="user-tel"
+                        >Введіть ваш телефон</label
+                      >
+                      <input
+                        class="form-input"
+                        type="tel"
+                        id="user-tel"
+                        name="user-tel"
+                        placeholder="Ваш номер телефону"
+                      />
+                    </div>
+
+                    <div class="contact-field">
+                      <label class="form-label visually-hidden" for="user-email"
+                        >Введіть ваш email</label
+                      >
+                      <input
+                        class="form-input"
+                        type="email"
+                        id="user-email"
+                        name="user-email"
+                        placeholder="Ваша електронна пошта"
+                      />
+                    </div>
+                    <div class="form-button-terms-container">
+                      <button class="button-modal" type="submit">
+                        Записатись безкоштовно
+                      </button>
+
+                      <p class="form-terms">
+                        Натискаючи на кнопку я погоджуюсь
+                        <a class="form-terms-link" href="#"
+                          >з політикою конфіденційності</a
+                        >
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -263,9 +323,6 @@
               <li class="footer-item">
                 <a class="footer-link" href="#contacts">Контакти</a>
               </li>
-              <!-- tel -->
-              <!-- facebook -->
-              <!-- instagram -->
             </ul>
           </nav>
           <address>
@@ -328,7 +385,7 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button type="button" class="modal-btn-close">close</button>
+        <button class="modal-btn-close" type="button">close</button>
         <h2 class="order-call">Замовити дзвінок</h2>
         <div class="modal-input-fields">
           <p class="modal-call-to-action">
@@ -336,9 +393,9 @@
             подарунок
           </p>
 
-          <form name="contact-form" novalidate>
+          <form name="modal-form" autocomplete="on" novalidate>
             <div class="form-field">
-              <label class="form-lebel visually-hidden" for="user-name"
+              <label class="form-label visually-hidden" for="user-name"
                 >Введіть ваше імя</label
               >
               <input
@@ -351,7 +408,7 @@
             </div>
 
             <div class="form-field">
-              <label class="form-lebel visually-hidden" for="user-tel"
+              <label class="form-label visually-hidden" for="user-tel"
                 >Введіть ваш телефон</label
               >
               <input
@@ -364,7 +421,7 @@
             </div>
 
             <div class="form-field">
-              <label class="form-lebel visually-hidden" for="user-email"
+              <label class="form-label visually-hidden" for="user-email"
                 >Введіть ваш email</label
               >
               <input
@@ -375,14 +432,18 @@
                 placeholder="Ваша електронна пошта"
               />
             </div>
+            <div class="form-button-terms-container">
+              <button class="button-modal" type="submit">
+                Записатись безкоштовно
+              </button>
 
-            <button class="button-modal" type="submit">
-              Записатись безкоштовно
-            </button>
-            <p>
-              Натискаючи на кнопку я погоджуюсь
-              <a href="#">з політикою конфіденційності</a>
-            </p>
+              <p class="form-terms">
+                Натискаючи на кнопку я погоджуюсь
+                <a class="form-terms-link" href="#"
+                  >з політикою конфіденційності</a
+                >
+              </p>
+            </div>
           </form>
         </div>
       </div>
